@@ -94,10 +94,10 @@ const T = {
       footerCta: 'Jadwalkan Konsultasi Khusus',
     },
     hero: {
-      headline: 'Tiga Cara Bikin\nBisnis Tumbuh.',
-      sub: 'Ekosistem digital terpadu untuk scale-up perusahaan kamu — lewat arsitektur teknologi cerdas, strategi growth berbasis data, dan sindikasi kemitraan yang solid.',
+      headline: 'Tiga Fondasi Skala\nEkosistem Bisnis.',
+      sub: 'Ekosistem digital terpadu untuk akselerasi dan ekspansi enterprise — ditopang rekayasa teknologi presisi, strategi pertumbuhan berbasis data, dan aliansi kemitraan strategis.',
       cta1: 'Jelajah Ekosistem',
-      cta2: 'Ngobrol Bareng Tim',
+      cta2: 'Jadwalkan Konsultasi',
       coord: '7.7956° LS · 110.3695° BT · Yogyakarta Tech Hub',
     },
     metrics: {
@@ -180,7 +180,7 @@ const T = {
     },
     archetypes: {
       label: 'Coda Blueprint Simulator',
-      headline: 'Pilih tipe bisnismu,\nlihat alur scale-upnya.',
+      headline: 'Pilih Model Bisnis,\nEksplorasi Alur Skala Usaha.',
       sub: 'Simulasi alur pertumbuhan modular yang disesuaikan dengan profil dan skala operasional perusahaan Anda.',
       tabs: [
         {
@@ -245,10 +245,10 @@ const T = {
     },
     workflow: {
       label: 'Alur Kerja Transparan',
-      headline: 'Cara kami bekerja bareng kamu.',
-      sub: 'Tanpa proses birokrasi berbelit. Tahapan yang jelas, terukur, dan transparan dari hari pertama.',
+      headline: 'Metodologi Eksekusi Terstruktur.',
+      sub: 'Proses rekayasa transparan dengan akuntabilitas penuh pada setiap fase implementasi.',
       steps: [
-        { num: '01', title: 'Discovery & Brief',    phase: 'Fase 1 · Minggu 1',     desc: 'Kami bedah tantangan bisnismu, tentukan KPI yang realistis, dan rancang ruang lingkup kerjasama secara presisi.', deliverable: 'Scope Document & Action Plan' },
+        { num: '01', title: 'Discovery & Brief',    phase: 'Fase 1 · Minggu 1',     desc: 'Kami bedah tantangan strategis enterprise, tentukan KPI terukur, dan rancang ruang lingkup solusi secara presisi.', deliverable: 'Scope Document & Action Plan' },
         { num: '02', title: 'System Blueprinting',  phase: 'Fase 2 · Minggu 2',     desc: 'Perancangan arsitektur teknologi, wireframe interaktif, rancangan database, atau formulasi strategi go-to-market.', deliverable: 'Technical Spec & UI/UX Prototype' },
         { num: '03', title: 'Precision Build',       phase: 'Fase 3 · Minggu 3 - 6', desc: 'Eksekusi rekayasa kode dengan standar clean architecture, integrasi sistem, dan testing menyeluruh.', deliverable: 'Staging Environment & QA Reports' },
         { num: '04', title: 'Handover & Growth',    phase: 'Fase 4 · Berkelanjutan', desc: 'Peluncuran ke live production, serah terima 100% source code, training tim internal, dan pendampingan berkala.', deliverable: 'Production Deployment & SLA Support' },
@@ -311,12 +311,12 @@ const T = {
       sub: 'PT Tiga Ekosistem Lintas Usaha (TELLU)',
       trackLabel: 'Pilih Kategori Kerjasama',
       tracks: [
-        'Teknologi & Custom Software Development',
-        'Infrastruktur Cloud & DevOps SaaS',
-        'Akselerasi Growth & Performance Marketing',
-        'Kemitraan Strategis & Joint Venture (JV)',
-        'Deployment Web Korporat (YukWebsite)',
-        'Permintaan Akses Demo TELLU Systems',
+        'Custom Software & Core Tech',
+        'Cloud Infra & DevOps SaaS',
+        'Growth & Performance Marketing',
+        'Strategic JV & Partnerships',
+        'Web Korporat (YukWebsite)',
+        'Demo Akses TELLU Systems',
       ],
       company: 'Nama Perusahaan / Organisasi *',
       contact: 'Nama Perwakilan *',
@@ -579,12 +579,12 @@ const T = {
       sub: 'PT Tiga Ekosistem Lintas Usaha (TELLU)',
       trackLabel: 'Select Partnership Channel',
       tracks: [
-        'Technology & Custom Software Development',
-        'Cloud Infrastructure & DevOps SaaS',
-        'Growth Acceleration & Performance Marketing',
-        'Strategic Alliance & Joint Venture (JV)',
-        'Corporate Web Deployment (YukWebsite)',
-        'TELLU Systems Platform Demo Request',
+        'Custom Software & Core Tech',
+        'Cloud Infra & DevOps SaaS',
+        'Growth & Performance Marketing',
+        'Strategic JV & Partnerships',
+        'Corporate Web (YukWebsite)',
+        'TELLU Systems Platform Demo',
       ],
       company: 'Company / Organization Name *',
       contact: 'Representative Name *',
@@ -719,16 +719,17 @@ function InfiniteMarquee() {
 
   return (
     <div className="w-full overflow-hidden py-4 space-y-3 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]" aria-hidden="true">
-      {/* Track 1 — slides smoothly to the LEFT with relaxed 40s linear loop */}
+      {/* Track 1 — slides smoothly to the LEFT with relaxed 68s linear loop calibrated for 60Hz */}
       <div className="relative overflow-hidden flex">
         <motion.div
           animate={{ x: ['0%', '-50%'] }}
           transition={{
             repeat: Infinity,
             repeatType: 'loop',
-            duration: 40,
+            duration: 68,
             ease: 'linear',
           }}
+          style={{ willChange: 'transform', transform: 'translate3d(0, 0, 0)' }}
           className="flex w-max"
         >
           {loopedServices.map((s, i) => (
@@ -737,16 +738,17 @@ function InfiniteMarquee() {
         </motion.div>
       </div>
 
-      {/* Track 2 — slides smoothly to the RIGHT with relaxed 44s linear loop */}
+      {/* Track 2 — slides smoothly to the RIGHT with relaxed 76s linear loop calibrated for 60Hz */}
       <div className="relative overflow-hidden flex">
         <motion.div
           animate={{ x: ['-50%', '0%'] }}
           transition={{
             repeat: Infinity,
             repeatType: 'loop',
-            duration: 44,
+            duration: 76,
             ease: 'linear',
           }}
+          style={{ willChange: 'transform', transform: 'translate3d(0, 0, 0)' }}
           className="flex w-max"
         >
           {loopedTech.map((s, i) => (
@@ -800,7 +802,7 @@ function Navbar() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
             onClick={() => setMegaOpen(false)}
-            className="fixed inset-0 z-40 bg-slate-900/20 dark:bg-black/60 backdrop-blur-md"
+            className="fixed inset-0 z-40 bg-black/60 backdrop-blur-md"
           />
         )}
       </AnimatePresence>
@@ -962,7 +964,8 @@ function Navbar() {
             className="fixed top-[88px] left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-5xl z-50 pointer-events-auto"
           >
             <div
-              className="p-8 md:p-10 rounded-3xl bg-white/95 dark:bg-[#0D0F15]/95 border border-slate-200 dark:border-white/10 shadow-2xl backdrop-blur-2xl overflow-hidden text-slate-900 dark:text-white"
+              style={{ backgroundColor: dark ? 'rgba(8, 9, 12, 0.98)' : 'rgba(255, 255, 255, 0.98)' }}
+              className="p-8 md:p-10 rounded-3xl bg-white/98 dark:bg-[#08090C]/98 border border-slate-200 dark:border-slate-800/80 shadow-2xl shadow-slate-900/10 dark:shadow-black/80 backdrop-blur-2xl overflow-hidden text-slate-900 dark:text-white"
             >
               {/* 3 Pillars Dedicated Functional Columns */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -1228,16 +1231,17 @@ function Modal({ open, initialTrack, onClose }: { open: boolean; initialTrack: n
               <form onSubmit={e => { e.preventDefault(); setSubmitted(true); }} className="mt-5 space-y-4">
                 <div>
                   <label className="block font-mono text-[10px] uppercase tracking-wider mb-2" style={{ color: textDim }}>{tm.trackLabel}</label>
-                  <div className="grid grid-cols-2 gap-1.5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {tm.tracks.map((name, i) => (
                       <button key={i} type="button" onClick={() => setTrack(i)}
-                        className={`text-left font-sans text-[11px] p-2 rounded-xl border transition-all truncate ${
+                        className={`text-left font-sans text-xs p-3 rounded-xl border transition-all leading-snug flex items-center justify-between ${
                           track === i
-                            ? 'font-bold border-slate-900 bg-slate-900 text-white dark:border-white/30 dark:bg-white/10 dark:text-white'
-                            : 'opacity-60 hover:opacity-90'
+                            ? 'font-bold border-slate-900 bg-slate-900 text-white dark:border-white/30 dark:bg-white/10 dark:text-white shadow-sm'
+                            : 'opacity-70 hover:opacity-100 hover:bg-slate-50 dark:hover:bg-white/[0.03]'
                         }`}
                         style={{ borderColor: track === i ? undefined : border, color: track === i ? undefined : textSec }}>
-                        {name}
+                        <span>{name}</span>
+                        {track === i && <Check className="w-3.5 h-3.5 flex-shrink-0 text-amber-500 ml-1.5" />}
                       </button>
                     ))}
                   </div>
@@ -1268,17 +1272,17 @@ function Modal({ open, initialTrack, onClose }: { open: boolean; initialTrack: n
                     style={{ borderColor: border, color: textPri }} />
                 </div>
 
-                <div className="pt-2 flex flex-col sm:flex-row gap-2">
+                <div className="pt-3 space-y-2.5">
                   <motion.button whileHover={BTN_HVR} whileTap={BTN_TAP} type="submit"
-                    className="flex-1 flex items-center justify-center gap-2 py-3 rounded-full font-sans text-xs font-bold bg-slate-900 text-white hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200 shadow-sm transition">
-                    <Send className="w-3.5 h-3.5" /> {tm.submit}
+                    className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-sans text-xs font-bold bg-slate-900 text-white hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200 shadow-md transition">
+                    <Send className="w-3.5 h-3.5" /> <span>{tm.submit}</span>
                   </motion.button>
-                  <motion.a whileHover={BTN_HVR} whileTap={BTN_TAP}
+                  <motion.a whileHover={{ y: -1 }} whileTap={BTN_TAP}
                     href="https://wa.me/6281234567890?text=Halo%20TELLU%2C%20kami%20ingin%20berdiskusi%20kemitraan."
                     target="_blank" rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 py-3 px-4 rounded-full font-mono text-xs uppercase tracking-[0.18em] border border-slate-300 text-slate-700 hover:border-slate-900 hover:text-slate-900 dark:border-white/15 dark:text-slate-300 dark:hover:text-white transition"
-                    style={{ borderColor: border, color: textSec }}>
-                    <Phone className="w-3.5 h-3.5 text-emerald-500" /> {tm.wa}
+                    className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-mono text-xs uppercase tracking-[0.16em] text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-white/[0.04] transition border border-transparent hover:border-slate-200 dark:hover:border-white/10"
+                    style={{ color: textSec }}>
+                    <Phone className="w-3.5 h-3.5 text-emerald-500" /> <span>{tm.wa}</span>
                   </motion.a>
                 </div>
               </form>
@@ -1302,12 +1306,12 @@ function SukuTerrainStage({ heroRef }: { heroRef: React.RefObject<HTMLDivElement
     offset: ['start start', 'end start'],
   });
 
-  // Inertial spring smoothing for silky-smooth physics
+  // Inertial spring smoothing for silky-smooth physics calibrated for 60Hz viscous drag
   const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 90,
-    damping: 24,
-    mass: 0.2,
-    restDelta: 0.001,
+    stiffness: 45,       // decreased from 90 to eliminate snap/jerk
+    damping: 32,         // increased from 24 to introduce smooth viscous drag
+    mass: 0.8,           // increased from 0.2 to give physical momentum
+    restDelta: 0.0001,
   });
 
   // Logo starts submerged behind the dunes, smoothly rises higher into the freed space, and STOPS cleanly below the CTA buttons
@@ -1321,7 +1325,7 @@ function SukuTerrainStage({ heroRef }: { heroRef: React.RefObject<HTMLDivElement
       style={{ minHeight: '520px', height: 'clamp(480px, 58vh, 660px)' }}
     >
       {/* ── LAYER 1: THE FLOATING EMBLEM (Middle, z-10) ── */}
-      {/* Zero top-boundary clipping with overflow-visible, pure clean shadow with 0 neon glow */}
+      {/* Elevated with subtle warm sunrise ambient lighting overlay */}
       <div
         className="absolute inset-0 z-10 flex items-center justify-center overflow-visible pointer-events-none"
         style={{ paddingTop: '20px', paddingBottom: '20px' }}
@@ -1337,8 +1341,8 @@ function SukuTerrainStage({ heroRef }: { heroRef: React.RefObject<HTMLDivElement
             maxWidth: '500px',
             objectFit: 'contain',
             filter: dark
-              ? 'drop-shadow(0 18px 36px rgba(0,0,0,0.65))'
-              : 'drop-shadow(0 8px 24px rgba(0,0,0,0.06))',
+              ? 'drop-shadow(0 18px 36px rgba(0,0,0,0.65)) drop-shadow(0 -10px 40px rgba(255, 151, 0, 0.18))'
+              : 'drop-shadow(0 8px 24px rgba(0,0,0,0.06)) drop-shadow(0 -6px 20px rgba(255, 151, 0, 0.12))',
             mixBlendMode: dark ? 'normal' : 'multiply',
           }}
         />
@@ -1767,7 +1771,7 @@ function Home() {
         }} />
 
         {/* Headlines — SOLID white/dark, zero gradient text */}
-        <div className="relative z-40 flex flex-col items-center text-center px-6 sm:px-8 max-w-4xl mx-auto w-full">
+        <div className="relative z-20 flex flex-col items-center text-center px-6 sm:px-8 max-w-4xl mx-auto w-full">
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}

@@ -7,6 +7,10 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      opacity: {
+        '96': '0.96',
+        '98': '0.98',
+      },
       colors: {
         tellu: {
           dark: '#07090E',
