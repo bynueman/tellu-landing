@@ -46,3 +46,7 @@ screenshots/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Agent Caches & AST Graphs (Local only)
+graphify-out/
+.agents/
