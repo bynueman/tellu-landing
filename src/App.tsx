@@ -5,7 +5,7 @@ import {
   Sun, Moon, Globe, Menu, X, ArrowRight, ExternalLink,
   Send, CheckCircle2, Building2, Phone, Mail, MapPin,
   ArrowUpRight, Cpu, BarChart3, Network, Lightbulb, Target,
-  Handshake, ChevronDown, Check, Zap, Sparkles,
+  Handshake, ChevronDown, ChevronUp, Check, Zap, Sparkles,
   Store, Briefcase, Laptop, ShieldCheck, Layers,
   Terminal, Activity,
 } from 'lucide-react';
@@ -72,23 +72,23 @@ const T = {
       cta: 'Mulai Kolaborasi',
     },
     megaMenu: {
-      col1Title: '01 // TEKNOLOGI & INFRASTRUKTUR',
+      col1Title: '01 // TEKNOLOGI & SISTEM',
       col1Items: [
-        { name: 'YukWebsite.online', desc: 'Solusi web instan, landing page ekspres & UMKM', href: 'https://yukwebsite.online', external: true, track: 4, icon: Globe },
-        { name: 'TELLU Systems', desc: 'Sistem POS realtime, inventori, dan software operasional kustom', href: undefined, external: false, track: 5, icon: Cpu },
-        { name: 'Cloud & AI Tooling', desc: 'Infrastruktur cloud terdistribusi dan automasi AI', href: undefined, external: false, track: 1, icon: Zap },
+        { name: 'Website Korporat', desc: 'Web korporat berkecepatan tinggi & landing page performa (YukWebsite)', href: 'https://yukwebsite.online', external: true, track: 4, icon: Globe },
+        { name: 'Custom Software & POS', desc: 'Sistem ERP/POS realtime, inventori, dan software operasional kustom', href: undefined, external: false, track: 5, icon: Cpu },
+        { name: 'AI Workflow & Cloud SaaS', desc: 'Integrasi automasi AI workflow dan arsitektur cloud infrastructure', href: undefined, external: false, track: 1, icon: Zap },
       ],
-      col2Title: '02 // AKSELERASI BISNIS',
+      col2Title: '02 // PERTUMBUHAN & PEMASARAN',
       col2Items: [
-        { name: 'Conversion Pipelines', desc: 'Optimasi jalur akuisisi dan konversi lead ke WhatsApp', href: undefined, external: false, track: 2, icon: Target },
-        { name: 'Brand Modernization', desc: 'Peningkatan positioning dan identitas otoritas digital', href: undefined, external: false, track: 2, icon: Sparkles },
-        { name: 'Data-Driven Growth', desc: 'Analitik performa terukur dan strategi retensi pasar', href: undefined, external: false, track: 2, icon: BarChart3 },
+        { name: 'Digital Marketing & Ads', desc: 'Akuisisi performa tinggi & ekspansi sosial media berbasis data', href: undefined, external: false, track: 2, icon: BarChart3 },
+        { name: 'Funnel CRO & Inbound WA', desc: 'Conversion funnel optimization & otomasi inbound lead WhatsApp', href: undefined, external: false, track: 2, icon: Target },
+        { name: 'Branding & Otoritas Pasar', desc: 'Strategi identitas otoritas pasar dan positioning brand enterprise', href: undefined, external: false, track: 2, icon: Sparkles },
       ],
-      col3Title: '03 // SINERGI & ALIANSI',
+      col3Title: '03 // KEMITRAAN & SINERGI',
       col3Items: [
-        { name: 'Jaringan Reseller', desc: 'Program distribusi resmi dan lisensi ekosistem teknologi', href: undefined, external: false, track: 3, icon: Network },
-        { name: 'Joint Ventures', desc: 'Inkubasi bersama dan kemitraan strategis multi-industri', href: undefined, external: false, track: 3, icon: Handshake },
-        { name: 'Enterprise Advisory', desc: 'Konsultasi arsitektur sistem dan solusi bisnis terpadu', href: undefined, external: false, track: 0, icon: Building2 },
+        { name: 'Jaringan Reseller', desc: 'Program distribusi resmi dan lisensi teknologi ekosistem TELLU', href: undefined, external: false, track: 3, icon: Network },
+        { name: 'Joint Ventures', desc: 'Kolaborasi strategis & ko-inkubasi unit usaha lintas industri', href: undefined, external: false, track: 3, icon: Handshake },
+        { name: 'Solusi Bisnis Terpadu', desc: 'Konsorsium solusi bisnis terpadu dan advisory antar-ekosistem', href: undefined, external: false, track: 0, icon: Building2 },
       ],
       footerText: 'Diskusikan arsitektur sistem dan akselerasi bisnis Anda langsung dengan tim eksekutif TELLU.',
       footerCta: 'Jadwalkan Konsultasi Khusus',
@@ -98,7 +98,6 @@ const T = {
       sub: 'Ekosistem digital terpadu untuk akselerasi dan ekspansi enterprise — ditopang rekayasa teknologi presisi, strategi pertumbuhan berbasis data, dan aliansi kemitraan strategis.',
       cta1: 'Jelajah Ekosistem',
       cta2: 'Jadwalkan Konsultasi',
-      coord: '7.7956° LS · 110.3695° BT · Yogyakarta Tech Hub',
     },
     metrics: {
       label: 'Fondasi Institusional',
@@ -133,47 +132,56 @@ const T = {
       items: [
         {
           num: '01',
-          name: 'Teknologi & Infrastruktur',
+          name: 'Teknologi & Sistem Digital',
           tag: 'Kami Bangun',
           acc: 'tech' as const,
           Icon: Cpu,
           headline: 'Infrastruktur modern yang siap menopang ekspansi bisnis.',
-          desc: 'Kami rekayasa website korporat berkecepatan tinggi, platform cloud SaaS multi-tenant, microservices terdistribusi, hingga otomasi AI workflow dan pipeline DevOps yang scalable.',
+          desc: 'Kami merekayasa website korporat berkecepatan tinggi, custom software/ERP/POS, integrasi AI workflow, arsitektur SaaS multi-tenant, hingga infrastruktur cloud terdistribusi dengan keandalan tinggi.',
           capabilities: [
-            'Web Architecture & Instant Portals', 'Cloud SaaS & API Gateway',
-            'Otomasi AI & Workflow Bot', 'DevOps & High-Availability Infra', 'Distributed Microservices',
+            'Website Korporat Berkecepatan Tinggi',
+            'Custom Software, ERP & Realtime POS',
+            'Integrasi AI Workflow & Automasi Sistem',
+            'Arsitektur SaaS Multi-Tenant Scalable',
+            'Cloud Infrastructure & High Availability',
           ],
           cta: 'Jelajahi Solusi Teknologi',
           track: 0,
         },
         {
           num: '02',
-          name: 'Akselerasi Bisnis',
+          name: 'Pertumbuhan & Akselerasi Pasar',
           tag: 'Kami Akselerasi',
           acc: 'growth' as const,
           Icon: BarChart3,
-          headline: 'Mesin pertumbuhan agresif yang berakar pada data valid.',
-          desc: 'Bukan sekadar iklan. Kami rancang strategi akuisisi multi-channel, optimasi conversion rate (CRO), otoritas brand yang berwibawa, dan dominasi SEO organik yang berkelanjutan.',
+          headline: 'Mesin pertumbuhan komersial berbasis data dan konversi nyata.',
+          desc: 'Mendorong ekspansi bisnis melalui digital marketing terukur, branding & otoritas pasar, conversion funnel optimization (CRO, WhatsApp automated inbound), serta ekspansi sosial media berbasis data.',
           capabilities: [
-            'Performance Acquisition Ads', 'Brand Positioning & Authority',
-            'Search Engine Dominance (SEO)', 'WhatsApp Automated Lead Funnel', 'Business Intelligence Analytics',
+            'Digital Marketing & Paid Acquisition Ads',
+            'Branding & Otoritas Pasar Enterprise',
+            'Funnel CRO & Inbound WhatsApp Otomatis',
+            'Ekspansi Media Sosial Berbasis Data',
+            'Business Intelligence & Retensi Pasar',
           ],
           cta: 'Akselerasi Growth Bisnis',
           track: 2,
         },
         {
           num: '03',
-          name: 'Sinergi & Aliansi',
+          name: 'Kemitraan & Sinergi Bisnis',
           tag: 'Kami Sindikasi',
           acc: 'partner' as const,
           Icon: Network,
-          headline: 'Aliansi strategis untuk membuka pasar baru lebih cepat.',
-          desc: 'Pertumbuhan terbaik terjadi lewat kolaborasi. Kami sediakan skema joint venture, jaringan reseller terstruktur, lisensi white-label, dan konsorsium tender B2B maupun institusi.',
+          headline: 'Kolaborasi strategis untuk membuka jalur distribusi dan skala usaha.',
+          desc: 'Pertumbuhan eksponensial tercapai lewat aliansi. Kami sediakan jaringan reseller & lisensi teknologi, kolaborasi strategis (joint ventures), dan solusi bisnis terpadu antar-ekosistem.',
           capabilities: [
-            'Strategic Joint Venture (JV)', 'Agency Reseller Network',
-            'White-Label Technology License', 'Enterprise Tender Consortium', 'B2B Distribution Alliance',
+            'Jaringan Reseller & Distribusi Resmi',
+            'Lisensi Teknologi & White-Label Models',
+            'Kolaborasi Strategis (Joint Ventures)',
+            'Solusi Bisnis Terpadu Antar-Ekosistem',
+            'Konsorsium Tender & Aliansi Korporat',
           ],
-          cta: 'Gabung Jaringan Sindikasi',
+          cta: 'Eksplorasi Skema Kemitraan',
           track: 3,
         },
       ],
@@ -279,7 +287,37 @@ const T = {
       note: 'Diskusi bersifat rahasia. Perjanjian NDA tersedia atas permintaan.',
     },
     footer: {
-      desc: 'Membangun ekosistem bisnis digital inklusif melalui sinergi teknologi, percepatan pasar, dan kemitraan terstruktur.',
+      legalName: 'PT Tiga Ekosistem Lintas Usaha',
+      desc: 'Membangun ekosistem bisnis digital terpadu melalui keunggulan rekayasa teknologi, percepatan pertumbuhan terukur, dan kemitraan strategis berdaya ungkit tinggi.',
+      col1Title: 'Teknologi',
+      col1Links: [
+        { label: 'Web Systems', href: '#ventures' },
+        { label: 'Cloud POS', href: '#ventures' },
+        { label: 'Custom SaaS', href: '#pillars' },
+        { label: 'AI Automation', href: '#pillars' },
+      ],
+      col2Title: 'Pertumbuhan',
+      col2Links: [
+        { label: 'Digital Marketing', href: '#pillars' },
+        { label: 'Social Media Growth', href: '#pillars' },
+        { label: 'Funnel CRO', href: '#pillars' },
+        { label: 'Brand Strategy', href: '#pillars' },
+      ],
+      col3Title: 'Kemitraan',
+      col3Links: [
+        { label: 'Reseller Network', href: '#ventures' },
+        { label: 'Joint Ventures', href: '#syndicate' },
+        { label: 'Konsorsium Solusi Bisnis', href: '#pillars' },
+      ],
+      col4Title: 'Perusahaan & Legal',
+      col4Links: [
+        { label: 'Tentang Kami', to: '/about' },
+        { label: 'Tata Kelola (Governance)', to: '/about' },
+        { label: 'Kontak', href: 'mailto:corporate@tellu.co.id' },
+        { label: 'Kebijakan Privasi', href: '#privacy' },
+      ],
+      status: 'All Systems Operational',
+      backToTop: 'Kembali ke Atas',
       rights: 'Hak cipta dilindungi undang-undang.',
     },
     about: {
@@ -340,33 +378,32 @@ const T = {
       cta: 'Start Dialogue',
     },
     megaMenu: {
-      col1Title: '01 // TECHNOLOGY & INFRASTRUCTURE',
+      col1Title: '01 // TECHNOLOGY & SYSTEMS',
       col1Items: [
-        { name: 'YukWebsite.online', desc: 'Instant turnkey web, rapid landing pages & commercial scale', href: 'https://yukwebsite.online', external: true, track: 4, icon: Globe },
-        { name: 'TELLU Systems', desc: 'Realtime POS engine, inventory sync & bespoke corporate ERP', href: undefined, external: false, track: 5, icon: Cpu },
-        { name: 'Cloud & AI Tooling', desc: 'Distributed cloud architecture & intelligent AI automation', href: undefined, external: false, track: 1, icon: Zap },
+        { name: 'Corporate Web Platforms', desc: 'High-speed corporate portals & performance landing pages (YukWebsite)', href: 'https://yukwebsite.online', external: true, track: 4, icon: Globe },
+        { name: 'Custom Software & POS', desc: 'Realtime ERP/POS systems, inventory sync & bespoke software', href: undefined, external: false, track: 5, icon: Cpu },
+        { name: 'AI Workflows & Cloud SaaS', desc: 'AI workflow integration & multi-tenant cloud infrastructure', href: undefined, external: false, track: 1, icon: Zap },
       ],
-      col2Title: '02 // BUSINESS ACCELERATION',
+      col2Title: '02 // GROWTH & MARKETING',
       col2Items: [
-        { name: 'Conversion Pipelines', desc: 'High-conversion acquisition funnels & WhatsApp lead pipelines', href: undefined, external: false, track: 2, icon: Target },
-        { name: 'Brand Modernization', desc: 'Authoritative brand positioning & modern digital presence', href: undefined, external: false, track: 2, icon: Sparkles },
-        { name: 'Data-Driven Growth', desc: 'Measurable performance analytics & sustainable retention strategy', href: undefined, external: false, track: 2, icon: BarChart3 },
+        { name: 'Digital Marketing & Ads', desc: 'High-performance acquisition & data-driven social media expansion', href: undefined, external: false, track: 2, icon: BarChart3 },
+        { name: 'Funnel CRO & Inbound WA', desc: 'Conversion funnel optimization & automated WhatsApp inbound pipelines', href: undefined, external: false, track: 2, icon: Target },
+        { name: 'Branding & Market Authority', desc: 'Authoritative market positioning & enterprise brand strategy', href: undefined, external: false, track: 2, icon: Sparkles },
       ],
-      col3Title: '03 // SYNERGY & ALLIANCES',
+      col3Title: '03 // PARTNERSHIP & SYNERGY',
       col3Items: [
         { name: 'Reseller Network', desc: 'Official distribution syndicate & licensed technology models', href: undefined, external: false, track: 3, icon: Network },
-        { name: 'Joint Ventures', desc: 'Co-incubation & cross-industry strategic equity alliances', href: undefined, external: false, track: 3, icon: Handshake },
-        { name: 'Enterprise Advisory', desc: 'System architecture consulting & integrated corporate solutions', href: undefined, external: false, track: 0, icon: Building2 },
+        { name: 'Joint Ventures', desc: 'Strategic equity collaborations & cross-industry co-incubation', href: undefined, external: false, track: 3, icon: Handshake },
+        { name: 'Integrated Solutions', desc: 'Cross-ecosystem consortium & unified enterprise advisory', href: undefined, external: false, track: 0, icon: Building2 },
       ],
       footerText: 'Discuss your specific enterprise architecture directly with TELLU’s executive team.',
       footerCta: 'Book Advisory Session',
     },
     hero: {
-      headline: 'Three Ways to\nGrow Business.',
+      headline: 'Three Core Foundations\nfor Business Scale.',
       sub: 'An integrated digital ecosystem built to scale your enterprise — through bespoke technology architecture, data-backed growth acceleration, and strategic syndication alliances.',
       cta1: 'Explore Ecosystem',
       cta2: 'Start a Dialogue',
-      coord: '7.7956° S · 110.3695° E · Yogyakarta Tech Hub',
     },
     metrics: {
       label: 'Institutional Baseline',
@@ -401,47 +438,56 @@ const T = {
       items: [
         {
           num: '01',
-          name: 'Technology & Infrastructure',
+          name: 'Technology & Digital Systems',
           tag: 'We Architect',
           acc: 'tech' as const,
           Icon: Cpu,
           headline: 'High-availability infrastructure engineered for sustainable growth.',
-          desc: 'We engineer high-speed corporate web platforms, multi-tenant cloud SaaS engines, distributed microservices, AI automated workflows, and battle-tested DevOps pipelines.',
+          desc: 'We engineer high-speed corporate websites, custom software/ERP/POS systems, AI workflow automation, scalable multi-tenant SaaS architectures, and resilient cloud infrastructure.',
           capabilities: [
-            'Web Architecture & Instant Portals', 'Cloud SaaS & API Gateway',
-            'AI Automation & Agent Bots', 'DevOps & Resilient Cloud Infra', 'Distributed Microservices',
+            'High-Speed Corporate Web Platforms',
+            'Custom Software, ERP & Realtime POS',
+            'AI Workflow Automation & System Integration',
+            'Scalable Multi-Tenant SaaS Architecture',
+            'Enterprise Cloud Infrastructure & SLA Uptime',
           ],
           cta: 'Explore Technology Solutions',
           track: 0,
         },
         {
           num: '02',
-          name: 'Business Acceleration',
+          name: 'Growth & Market Acceleration',
           tag: 'We Accelerate',
           acc: 'growth' as const,
           Icon: BarChart3,
-          headline: 'Aggressive commercial scaling rooted in verified data analytics.',
-          desc: 'Beyond superficial traffic — we engineer full-funnel acquisition, conversion rate optimization (CRO), authoritative brand positioning, and sustainable organic SEO leadership.',
+          headline: 'Data-driven commercial expansion rooted in verified conversion.',
+          desc: 'Accelerating enterprise scale through performance digital marketing, authoritative brand positioning, conversion funnel optimization (CRO & WhatsApp automated inbound), and data-driven social media expansion.',
           capabilities: [
-            'Performance Acquisition Ads', 'Brand Positioning & Authority',
-            'Search Engine Dominance (SEO)', 'WhatsApp Automated Lead Funnel', 'Business Intelligence Analytics',
+            'Performance Digital Marketing & Ads',
+            'Enterprise Branding & Market Authority',
+            'Funnel CRO & Automated WhatsApp Inbound',
+            'Data-Driven Social Media Expansion',
+            'Business Intelligence & Customer Retention',
           ],
           cta: 'Accelerate Business Growth',
           track: 2,
         },
         {
           num: '03',
-          name: 'Synergy & Alliances',
+          name: 'Partnership & Business Synergy',
           tag: 'We Syndicate',
           acc: 'partner' as const,
           Icon: Network,
-          headline: 'Strategic syndication to unlock new distribution channels.',
-          desc: 'Sustainable scale happens through alliances. We structure joint ventures, tiered agency reseller networks, white-label licenses, and corporate/governmental tender consortiums.',
+          headline: 'Strategic syndication to unlock new distribution and ecosystem scale.',
+          desc: 'Catalyzing exponential scale through structured reseller networks, technology licensing, strategic joint ventures, and integrated cross-ecosystem business solutions.',
           capabilities: [
-            'Strategic Joint Venture (JV)', 'Agency Reseller Network',
-            'White-Label Technology License', 'Enterprise Tender Consortium', 'B2B Distribution Alliance',
+            'Official Reseller & Distribution Syndicate',
+            'White-Label & Technology Licensing',
+            'Strategic Joint Ventures (JV)',
+            'Integrated Cross-Ecosystem Solutions',
+            'Corporate Consortium & B2B Alliances',
           ],
-          cta: 'Join Syndication Network',
+          cta: 'Explore Partnership Models',
           track: 3,
         },
       ],
@@ -547,7 +593,37 @@ const T = {
       note: 'Strictly confidential. Mutual NDAs executed upon request.',
     },
     footer: {
-      desc: 'Building an inclusive digital business ecosystem through high-velocity engineering, data-backed scaling, and structured syndication.',
+      legalName: 'PT Tiga Ekosistem Lintas Usaha',
+      desc: 'Building an integrated digital business ecosystem through precision engineering, data-backed commercial growth, and high-leverage strategic partnerships.',
+      col1Title: 'Technology',
+      col1Links: [
+        { label: 'Web Systems', href: '#ventures' },
+        { label: 'Cloud POS', href: '#ventures' },
+        { label: 'Custom SaaS', href: '#pillars' },
+        { label: 'AI Automation', href: '#pillars' },
+      ],
+      col2Title: 'Growth',
+      col2Links: [
+        { label: 'Digital Marketing', href: '#pillars' },
+        { label: 'Social Media Growth', href: '#pillars' },
+        { label: 'Funnel CRO', href: '#pillars' },
+        { label: 'Brand Strategy', href: '#pillars' },
+      ],
+      col3Title: 'Partnership',
+      col3Links: [
+        { label: 'Reseller Network', href: '#ventures' },
+        { label: 'Joint Ventures', href: '#syndicate' },
+        { label: 'Integrated Business Consortium', href: '#pillars' },
+      ],
+      col4Title: 'Corporate & Legal',
+      col4Links: [
+        { label: 'About Us', to: '/about' },
+        { label: 'Governance Standards', to: '/about' },
+        { label: 'Contact', href: 'mailto:corporate@tellu.co.id' },
+        { label: 'Privacy Policy', href: '#privacy' },
+      ],
+      status: 'All Systems Operational',
+      backToTop: 'Back to Top',
       rights: 'All rights reserved.',
     },
     about: {
@@ -697,7 +773,7 @@ function MarqueePill({
     <motion.span
       whileHover={{ y: -3, scale: 1.04 }}
       transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-      className="inline-flex items-center gap-2 mx-3 px-4 py-2.5 rounded-full whitespace-nowrap text-xs font-mono font-medium select-none transition-colors duration-200 bg-white dark:bg-[#0D0F15] border border-slate-200 dark:border-white/[0.08] text-slate-800 dark:text-slate-200 shadow-sm cursor-default"
+      className="relative shrink-0 select-none will-change-transform transform-gpu inline-flex items-center gap-2 mx-3 px-4 py-2.5 rounded-full whitespace-nowrap text-xs font-mono font-medium transition-colors duration-200 bg-white dark:bg-[#0D0F15] border border-slate-200 dark:border-white/[0.08] text-slate-800 dark:text-slate-200 shadow-sm cursor-default"
       style={{
         borderLeftWidth: accent ? '3px' : '1px',
         borderLeftColor: accent || undefined,
@@ -718,9 +794,9 @@ function InfiniteMarquee() {
   const loopedTech     = [...tech,     ...tech,     ...tech,     ...tech];
 
   return (
-    <div className="w-full overflow-hidden py-4 space-y-3 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]" aria-hidden="true">
+    <div className="relative w-full overflow-hidden py-6 space-y-4 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]" aria-hidden="true">
       {/* Track 1 — slides smoothly to the LEFT with relaxed 68s linear loop calibrated for 60Hz */}
-      <div className="relative overflow-hidden flex">
+      <div className="relative w-full overflow-hidden py-3">
         <motion.div
           animate={{ x: ['0%', '-50%'] }}
           transition={{
@@ -730,7 +806,7 @@ function InfiniteMarquee() {
             ease: 'linear',
           }}
           style={{ willChange: 'transform', transform: 'translate3d(0, 0, 0)' }}
-          className="flex w-max"
+          className="flex w-max py-2"
         >
           {loopedServices.map((s, i) => (
             <MarqueePill key={i} label={s} accent={ACC.tech.dot} dark={dark} />
@@ -739,7 +815,7 @@ function InfiniteMarquee() {
       </div>
 
       {/* Track 2 — slides smoothly to the RIGHT with relaxed 76s linear loop calibrated for 60Hz */}
-      <div className="relative overflow-hidden flex">
+      <div className="relative w-full overflow-hidden py-3">
         <motion.div
           animate={{ x: ['-50%', '0%'] }}
           transition={{
@@ -749,7 +825,7 @@ function InfiniteMarquee() {
             ease: 'linear',
           }}
           style={{ willChange: 'transform', transform: 'translate3d(0, 0, 0)' }}
-          className="flex w-max"
+          className="flex w-max py-2"
         >
           {loopedTech.map((s, i) => (
             <MarqueePill key={i} label={s} accent={ACC.partner.dot} dark={dark} />
@@ -1115,48 +1191,148 @@ function Navbar() {
 // FOOTER
 // ─────────────────────────────────────────────────────────────────────────────
 function Footer() {
-  const { dark, border, textDim, textPri, t } = useApp();
+  const { dark, t } = useApp();
+  const f = t.footer;
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <footer style={{ borderTop: `1px solid ${border}`, background: dark ? '#060709' : '#F1F5F9' }}
-      className="py-16 md:py-24 px-6 sm:px-8 w-full">
-      <div className="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-4 gap-10">
-        <div className="md:col-span-2 space-y-4">
-          <div className="flex items-center gap-2.5">
-            <img src="/tellu-logo.png" alt="TELLU" className="w-7 h-7 object-contain opacity-80" />
-            <span
-              className="font-display font-black text-base tracking-wider"
-              style={{ fontFamily: "'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif", color: textPri }}
-            >
-              TELLU
-            </span>
+    <footer
+      style={{
+        borderTop: `1px solid ${dark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(226, 232, 240, 0.8)'}`,
+        background: dark ? '#060709' : '#F8FAFC',
+      }}
+      className="pt-16 md:pt-20 pb-12 px-6 sm:px-8 w-full"
+    >
+      <div className="max-w-6xl mx-auto w-full space-y-12">
+        {/* Main Grid: Brand Block + 4 Navigation Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12">
+          {/* Brand Block */}
+          <div className="md:col-span-4 lg:col-span-4 space-y-4">
+            <div className="flex items-center gap-2.5">
+              <img src="/tellu-logo.png" alt="TELLU Emblem" className="w-7 h-7 object-contain" />
+              <span
+                className="font-display font-black text-lg tracking-wider text-slate-900 dark:text-white"
+                style={{ fontFamily: "'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif" }}
+              >
+                TELLU
+              </span>
+            </div>
+            <p className="font-mono text-xs uppercase tracking-wider font-semibold text-slate-700 dark:text-slate-300">
+              {f.legalName}
+            </p>
+            <p className="font-sans text-xs sm:text-sm leading-relaxed text-slate-500 dark:text-slate-400 max-w-sm">
+              {f.desc}
+            </p>
           </div>
-          <p className="font-sans text-xs leading-relaxed max-w-sm text-slate-400">{t.footer.desc}</p>
-          <p className="font-mono text-[10px] uppercase tracking-widest" style={{ color: textDim }}>{t.hero.coord}</p>
+
+          {/* 4-Column Structured Navigation */}
+          <div className="md:col-span-8 lg:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-8">
+            {/* Col 1: Teknologi */}
+            <div className="space-y-3">
+              <p className="font-mono text-[11px] uppercase tracking-wider font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full" style={{ background: ACC.tech.dot }} />
+                {f.col1Title}
+              </p>
+              <ul className="space-y-2.5 font-sans text-xs text-slate-500 dark:text-slate-400">
+                {f.col1Links.map((item, idx) => (
+                  <li key={idx}>
+                    <a href={item.href} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Col 2: Pertumbuhan */}
+            <div className="space-y-3">
+              <p className="font-mono text-[11px] uppercase tracking-wider font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full" style={{ background: ACC.growth.dot }} />
+                {f.col2Title}
+              </p>
+              <ul className="space-y-2.5 font-sans text-xs text-slate-500 dark:text-slate-400">
+                {f.col2Links.map((item, idx) => (
+                  <li key={idx}>
+                    <a href={item.href} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Col 3: Kemitraan */}
+            <div className="space-y-3">
+              <p className="font-mono text-[11px] uppercase tracking-wider font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full" style={{ background: ACC.partner.dot }} />
+                {f.col3Title}
+              </p>
+              <ul className="space-y-2.5 font-sans text-xs text-slate-500 dark:text-slate-400">
+                {f.col3Links.map((item, idx) => (
+                  <li key={idx}>
+                    <a href={item.href} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Col 4: Perusahaan & Legal */}
+            <div className="space-y-3">
+              <p className="font-mono text-[11px] uppercase tracking-wider font-semibold text-slate-900 dark:text-white">
+                {f.col4Title}
+              </p>
+              <ul className="space-y-2.5 font-sans text-xs text-slate-500 dark:text-slate-400">
+                {f.col4Links.map((item, idx) => (
+                  <li key={idx}>
+                    {item.to ? (
+                      <Link to={item.to} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                        {item.label}
+                      </Link>
+                    ) : (
+                      <a href={item.href} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                        {item.label}
+                      </a>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div className="space-y-3">
-          <p className="font-mono text-[11px] uppercase tracking-wider font-semibold" style={{ color: textPri }}>Tiga Pilar</p>
-          <ul className="space-y-2 font-sans text-xs text-slate-400">
-            <li className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full" style={{ background: ACC.tech.dot }} />01. Teknologi & Infrastruktur
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full" style={{ background: ACC.growth.dot }} />02. Akselerasi Bisnis
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full" style={{ background: ACC.partner.dot }} />03. Sinergi & Kemitraan
-            </li>
-          </ul>
-        </div>
+        {/* Hairline Divider */}
+        <div style={{ borderTop: `1px solid ${dark ? 'rgba(255, 255, 255, 0.06)' : 'rgba(226, 232, 240, 0.8)'}` }} />
 
-        <div className="space-y-3">
-          <p className="font-mono text-[11px] uppercase tracking-wider font-semibold" style={{ color: textPri }}>Tata Kelola</p>
-          <p className="font-sans text-xs leading-relaxed" style={{ color: textDim }}>
-            PT Tiga Ekosistem Lintas Usaha beroperasi di bawah payung hukum Republik Indonesia.
+        {/* Bottom Utility Bar: Copyright + System Status + Back to Top */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-slate-500 dark:text-slate-400">
+          <p className="text-center sm:text-left">
+            © {new Date().getFullYear()} {f.legalName}. {f.rights}
           </p>
-          <p className="font-mono text-[10px] pt-2" style={{ color: textDim }}>
-            © {new Date().getFullYear()} TELLU. {t.footer.rights}
-          </p>
+
+          <div className="flex items-center gap-6">
+            {/* System Status Badge */}
+            <div className="flex items-center gap-2 px-3 py-1 rounded-full border border-slate-200 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03]">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span className="text-[11px] uppercase tracking-wider font-medium text-slate-700 dark:text-slate-300">
+                {f.status}
+              </span>
+            </div>
+
+            {/* Back to top micro interaction */}
+            <button
+              onClick={scrollToTop}
+              className="flex items-center gap-1.5 hover:text-slate-900 dark:hover:text-white transition-colors text-[11px] uppercase tracking-wider font-medium group"
+              aria-label="Back to top"
+            >
+              <span>{f.backToTop}</span>
+              <ChevronUp className="w-3.5 h-3.5 group-hover:-translate-y-0.5 transition-transform" />
+            </button>
+          </div>
         </div>
       </div>
     </footer>
@@ -1817,7 +1993,7 @@ function Home() {
       {/* ════════════════════════════════════════════════════════════════════
           2. INFINITE MARQUEE CAROUSEL (SLOW & SMOOTH)
       ════════════════════════════════════════════════════════════════════ */}
-      <section className="py-8 w-full" style={{ borderTop: `1px solid ${border}`, borderBottom: `1px solid ${border}` }}>
+      <section id="marquee" className="py-8 w-full" style={{ borderTop: `1px solid ${border}`, borderBottom: `1px solid ${border}` }}>
         <InfiniteMarquee />
       </section>
 
@@ -1859,7 +2035,7 @@ function Home() {
           <div className="flex items-center gap-8 whitespace-nowrap animate-pulse font-mono text-xs uppercase tracking-[0.22em] opacity-50">
             {t.ticker.map((item, idx) => (
               <span key={idx} className="inline-flex items-center gap-2" style={{ color: textSec }}>
-                <span style={{ color: ACC.tech.dot }}>❖</span> {item}
+                <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: ACC.tech.dot }} /> {item}
               </span>
             ))}
           </div>
