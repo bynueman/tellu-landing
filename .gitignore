@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Critical System & Cache Leaks (Windows AppData, package manager caches)
+%LOCALAPPDATA%/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build outputs (Build must happen on CI/CD/Hosting)
+dist/
+dist-ssr/
+build/
+*.local
+
+# Secrets, Environment Credentials & Private Keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# Documentation / Markdown files
+*.md
+
+# IDE & OS Artifacts
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
