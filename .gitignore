@@ -28,6 +28,18 @@ build/
 # Documentation / Markdown files
 *.md
 
+# Screenshots & Visual Testing Artifacts
+screenshots/
+*.png
+*.jpg
+*.jpeg
+*.webp
+!public/*.png
+!public/*.svg
+!logo/*.png
+!src/assets/*.png
+!src/assets/*.svg
+
 # IDE & OS Artifacts
 .vscode/
 !.vscode/extensions.json
